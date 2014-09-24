@@ -1,0 +1,542 @@
+/****************************************************
+ * @Author:             山水云
+ * @Site:               http://www.ssyleo.com
+ * @Email:              dlming@foxmail.com
+ * @Create Date:        2014-09-02 22:22:38
+ * @Last Modified By:   DLM
+ * @Last Modified Date: 2014-09-16 21:33:20
+ ***************************************************/
+
+/*
+Theme Name: Peace-山水云
+Theme URI: http://www.ssyleo.com
+Description: 简单、朴素、效率高、SEO好。只保留了实用、常用的功能，去除了边边角角的冗余杂项，极大提高了访问速度。
+Version: 1.0
+Author: 山水云
+Author URI: http://www.ssyleo.com
+Tags: 黑色,白色,浅色系,两栏,边栏在右侧
+*/
+
+/*重置*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+    color: #2C3E50;
+    font-family: Consolas,"Microsoft Yahei";
+    font-size: 14px;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2C3E50;
+}
+
+a:hover {
+    color: #2483cf;
+    -webkit-text-shadow: 0 0 3px #ccc;
+    -moz-text-shadow: 0 0 3px #ccc;
+    text-shadow: 0 0 3px #ccc;
+    -webkit-transition: -webkit-text-shadow .2s linear;
+    -moz-transition: -moz-text-shadow .2s linear;
+    transition: text-shadow .2s linear;
+}
+
+img {
+    border: none;
+}
+
+p {
+    word-wrap: break-word;
+    line-height: 1.5em;
+}
+
+*:link, *:visited, *:hover, *:active, *:focus {
+    -webkit-transition: color .2s linear, background-color .2s linear, border-color .2s linear;
+    -moz-transition: color .2s linear, background-color .2s linear, border-color .2s linear;
+    transition: color .2s linear, background-color .2s linear, border-color .2s linear;
+}
+
+/*通用*/
+.mh0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mv0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ml0 {
+    margin-left: 0;
+}
+
+.ml10 {
+    margin-left: 10;
+}
+
+.ml15 {
+    margin-left: 15;
+}
+
+.mr0 {
+    margin-right: 0;
+}
+
+.mr10 {
+    margin-right: 10;
+}
+
+.mr15 {
+    margin-right: 15;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*徽章*/
+.badage {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 0px 8px;
+    background: #D6DBDF;
+    color: #fff;
+}
+
+.active .badage {
+    background: #fff;
+    color: #3AAAED;
+}
+
+/* 栅格化布局样式 */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.col {
+    float: left;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.col-fixed {
+    margin-right: 0;
+}
+
+.col-1 {
+    width: 76px;
+}
+
+.col-2 {
+    width: 160px;
+}
+
+.col-3 {
+    width: 244px;
+}
+
+.col-4 {
+    width: 328px;
+}
+
+.col-5 {
+    width: 412px;
+}
+
+.col-6 {
+    width: 496px;
+}
+
+.col-7 {
+    width: 580px;
+}
+
+.col-8 {
+    width: 664px;
+}
+
+.col-9 {
+    width: 748px;
+}
+
+.col-10 {
+    width: 832px;
+}
+
+.col-11 {
+    width: 916px;
+}
+
+.col-12 {
+    width: 1000p;
+}
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*头部*/
+.header {
+    width: 100%;
+    height: 59px;
+    background: #212121;
+    -webkit-box-shadow: 0 2px 10px #fff;
+    -moz-box-shadow: 0 2px 10px #fff;
+    box-shadow: 0 2px 10px #fff;
+}
+    /*LOGO*/
+#logo a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    color: #fff;
+}
+
+    /*菜单*/
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 30px 10px 8px 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-bottom: 2px;
+    color: #999;
+    font-size: 16px;
+    -webkit-text-shadow: 0 0 3px #999;
+    -moz-text-shadow: 0 0 3px #999;
+    text-shadow: 0 0 3px #999;
+}
+
+.menu ul li a:hover, .menu .active a {
+    background: none;
+    border-bottom: 2px solid #0df;
+    color: #fff;
+}
+
+/*分类目录*/
+.dropdown:hover ul{
+    display: block;
+}
+
+.dropdown-toggle {
+    position: relative;
+}
+
+.dropdown:hover .dropdown-toggle {
+    border-bottom: 2px solid #0df;
+    color: #fff;
+}
+
+.dropdown-menu {
+    width: 232px;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 59px;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+    -webkit-box-shadow: 0 0 10px #999;
+    -moz-box-shadow: 0 0 10px #999;
+    box-shadow: 0 0 10px #999;
+}
+
+.dropdown-menu a {
+    padding: 10px!important;
+    border: none!important;
+    position: relative;
+    -webkit-text-shadow: none!important;
+    -moz-text-shadow: none!important;
+    text-shadow: none!important;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+.dropdown-menu a:hover {
+    color: #0df!important;
+}
+
+.dropdown-menu a::before, .dropdown-menu a::after {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity .2s, -webkit-transform .2s;
+    -moz-transition: opacity .2s linear, -moz-transform .2s linear;
+    transition: opacity .2s linear, transform .2s linear;
+}
+
+.dropdown-menu a::before {
+    content: "{";
+    left: -0.1em;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.dropdown-menu a::after {
+    content: "}";
+    right: -0.1em;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.dropdown-menu a:hover::before, .dropdown-menu a:hover::after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+}
+
+
+/*主体*/
+.main {
+    margin: 20px 0;
+}
+
+.main .container {
+    background: #fff;
+    border: 1px solid #f1f1f1;
+}
+
+    /*左侧*/
+.left {
+    border-right: 1px solid #f1f1f1;
+    margin-left: -1px;
+}
+
+        /*幻灯片*/
+.flash {
+    width: 728px;
+    height: 230px;
+    background: #f00;
+    margin: 10px;
+}
+.topvebanner { margin: 0 auto; width: 728px; height: 230px; overflow: hidden; }
+.topvebanner ul { margin: 0; padding: 0; }
+#myjQuery { BACKGROUND: #000; OVERFLOW: hidden; WIDTH: 728px; POSITION: relative; HEIGHT: 230px; }
+#myjQueryContent { OVERFLOW: hidden; WIDTH: 728px; HEIGHT: 230px; }
+#myjQueryContent DIV { POSITION: absolute; HEIGHT: 230px; }
+#myjQueryContent .smask { Z-INDEX: -1; }
+#myjQueryContent IMG { WIDTH: 728px; HEIGHT: 230px; border: 0; }
+#myjQueryNav { DISPLAY: block; OVERFLOW: hidden; WIDTH: 81px; HEIGHT: 8px; position: absolute; bottom: 10px; right: 10px; z-index: 5; }
+#myjQueryNav LI { DISPLAY: block; FLOAT: left; WIDTH: 15px; CURSOR: pointer; HEIGHT: 8px; TEXT-ALIGN: center; margin-left: 1px; background: #666; color: #fff; }
+#myjQueryNav .nbg { BACKGROUND: #666; }
+#myjQueryNav A { DISPLAY: block; Z-INDEX: 12; MARGIN: 0px auto; TEXT-TRANSFORM: uppercase; WIDTH: 45px; COLOR: #ffffff; LINE-HEIGHT: 22px; POSITION: relative; HEIGHT: 22px; z-index: 20; }
+#myjQueryNav .current { BACKGROUND: #0df; }
+#myjQueryNav .current A { COLOR: #fff; }
+#myjQuery #flow { background: url(../images/fcurrent.gif) no-repeat; margin-top: -33px; WIDTH: 45px; HEIGHT: 22px; Z-INDEX: 22; left: 652px; POSITION: absolute; }
+
+.list {
+    background: #000;
+}
+
+.post {
+    width: 236px;
+    float: left;
+    margin: 10px 0 10px 10px;
+    background: #f1f1f1;
+}
+
+.post:hover {
+    -webkit-box-shadow: 0 0 10px #999;
+    -moz-box-shadow: 0 0 10px #999;
+    box-shadow: 0 0 10px #999;
+    background: #fff;
+}
+
+.post {
+    -webkit-transition: -webkit-box-shadow .2s linear;
+    -moz-transition: -moz-box-shadow .2s linear;
+    transition: box-shadow .2s linear;
+}
+
+.post .img {
+    display: block;
+    width: 236px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.post:hover img {
+    opacity: .8;
+}
+
+.post a img {
+    -webkit-transition: opacity .2s linear;
+    -moz-transition: opacity .2s linear;
+    transition: opacity .2s linear;
+}
+
+.post img {
+    width: 236px;
+}
+
+.post .info {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.post h2 {
+    height: 35px;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    -webkit-text-shadow: 0 -1px 2px #fff;
+    -moz-text-shadow: 0 -1px 2px #fff;
+    text-shadow: 0 -1px 2px #fff;
+}
+
+.post h2 a {
+    color: #999;
+}
+
+.post h2 a:hover {
+    color: #333;
+}
+
+.supports {
+    margin-right: 10px;
+}
+
+.comments {
+    margin-right: 10px;
+}
+
+.tags {
+    padding: 2px 4px;
+    float: right;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.tags:hover {
+    background: #999;
+    color: #fff;
+}
+
+.time {
+}
+
+
+    /*右侧*/
+.right {
+    height: 400px;
+}
+    /*侧边小工具*/
+.sidebar {
+    margin: 10px 10px 20px 10px;
+}
+
+.sidebar:hover h3 {
+    color: #0df;
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.sidebar ul {
+    margin-top: 10px;
+}
+
+.sidebar ul li {
+    padding: 5px 0;
+}
+
+.sidebar a {
+    display: block;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #999;
+    -webkit-transition: padding-left .2s linear;
+    -moz-transition: padding-left .2s linear;
+    transition: padding-left .2s linear;
+}
+
+.sidebar a:before {
+    content: " ";
+    width: 4px;
+    height: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    background-color: #999;
+}
+
+.sidebar a:hover {
+    color: #333;
+    padding-left: 5px;
+}
+
+.sidebar li:hover a::before {
+    background-color: #333;
+}
+
+/*内容页*/
+.content{
+    height: auto;
+    padding: 10px;
+}
+.content h1{ padding: 10px 0 20px 0;}
+.post-meta p{ line-height: 25px; color: #999;}
+.post-meta img{ width: 50px; height: 50px; margin-right: 20px;}
+.post-meta img, .post-meta-main{ float: left;}
+.post-meta-cat{ float: right; text-align: right;}
+.post-meta a{ -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; padding: 2px 4px; -webkit-text-shadow: 0 1px 1px #fff; -moz-text-shadow: 0 1px 1px #fff; text-shadow: 0 1px 1px #fff; color: #999;}
+.post-meta a:hover{ background: #D6DBDF; color: #000;}
+.post-author a{ color: #000;}
+
+.post-content{ margin-top: 30px;}
+.post-content p{ line-height: 1.5em; margin-bottom: 20px;}
+.post-content ul{ list-style: disc; margin-left: 40px; line-height: 2em; margin-bottom: 20px;}
+.post-content h3{ font-size: 20px; margin-bottom: 20px;}
+.post-content a{ padding: 0 5px; color: #0af;}
+.post-content a:hover{ text-decoration: underline;}
